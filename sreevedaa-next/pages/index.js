@@ -8,7 +8,7 @@ import ConditionsSection from '../components/ConditionsSection';
 import BenefitsSection from '../components/BenefitsSection';
 import SpecialTherapies from '../components/SpecialTherapies';
 import TestimonialsSection from '../components/TestimonialsSection';
-import PricingSection from '../components/PricingSection';
+// import PricingSection from '../components/PricingSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 import FloatingWidgets from '../components/FloatingWidgets';
@@ -38,7 +38,7 @@ export default function Home() {
       <BenefitsSection />
       <SpecialTherapies />
       <TestimonialsSection />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <ContactSection />
       <Footer />
       <FloatingWidgets />
