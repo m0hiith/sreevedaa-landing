@@ -1,0 +1,52 @@
+export const pricingPlans = [
+  {
+    name: 'Single Session',
+    desc: 'Try any one therapy',
+    price: '₹500–1200',
+    originalPrice: 'Depending on therapy type',
+    features: [
+      '1 session of your chosen therapy',
+      'Free health consultation',
+      'Personalized advice',
+      'Home service available',
+    ],
+    cta: { text: 'Book a Session', href: 'tel:9640553411' },
+    featured: false,
+  },
+  {
+    name: 'Wellness Package (10 Sessions)',
+    desc: 'Most chosen by patients',
+    price: '₹4,999',
+    originalPrice: 'Worth ₹8,000+',
+    features: [
+      '10 sessions (any therapy mix)',
+      'Free consultation every visit',
+      'Diet & lifestyle guidance',
+      'Home service option',
+      'Progress tracking included',
+    ],
+    cta: {
+      text: 'Book Package',
+      href: "https://wa.me/919640553411?text=I'm%20interested%20in%20the%2010-session%20Wellness%20Package",
+      external: true,
+    },
+    featured: true,
+    badge: 'Best Value',
+  },
+  {
+    name: 'Monthly Subscription',
+    desc: 'For chronic condition management',
+    price: '₹8,999',
+    priceSuffix: '/mo',
+    originalPrice: 'Unlimited sessions',
+    features: [
+      'Unlimited sessions per month',
+      'Priority appointment slots',
+      'Massage chair access included',
+      'Dedicated therapist assigned',
+      'Monthly health report',
+    ],
+    cta: { text: 'Enquire Now', href: 'tel:9640553411' },
+    featured: false,
+  },
+];
