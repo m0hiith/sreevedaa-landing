@@ -47,18 +47,15 @@
     transition: all 0.3s;
   }
   .nav-logo {
-    display: flex; align-items: center; gap: 0.75rem;
+    display: flex; align-items: center;
+    text-decoration: none;
   }
-  .nav-logo .logo-mark {
-    width: 44px; height: 44px;
-    background: linear-gradient(135deg, var(--forest), var(--sage));
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.2rem;
+  .nav-logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    display: block;
   }
-  .nav-logo-text { line-height: 1.1; }
-  .nav-logo-text .brand { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--forest); }
-  .nav-logo-text .tagline { font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a { text-decoration: none; color: var(--charcoal); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em; transition: color 0.2s; }
   .nav-links a:hover { color: var(--forest); }
@@ -152,7 +149,7 @@
     display: flex; gap: 2.5rem; margin-top: 3rem;
     padding-top: 2rem; border-top: 1px solid rgba(45,75,59,0.12);
   }
-  .stat { }
+
   .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600; color: var(--forest); line-height: 1; }
   .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.2rem; }
 
@@ -589,13 +586,9 @@
 
 <!-- NAV -->
 <nav id="navbar">
-  <div class="nav-logo">
-    <div class="logo-mark">🌿</div>
-    <div class="nav-logo-text">
-      <div class="brand">Sree Vedaa</div>
-      <div class="tagline">Heal Naturally · Live Happily</div>
-    </div>
-  </div>
+  <a href="#hero" class="nav-logo">
+    <img src="logo.png" alt="Sree Vedaa – Heal Naturally Live Happily" class="nav-logo-img">
+  </a>
   <ul class="nav-links">
     <li><a href="#services">Therapies</a></li>
     <li><a href="#conditions">Conditions</a></li>
@@ -1060,9 +1053,12 @@
 
 <!-- FOOTER -->
 <footer>
-  <div>
-    <div class="f-brand">Sree Vedaa Sujok & Acupuncture Therapy Centre</div>
-    <div>Plot No 7, Sector 12, MVP Colony, Visakhapatnam · <a href="tel:9640553411">9640553411</a></div>
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <img src="logo.png" alt="Sree Vedaa Logo" style="height:64px;width:auto;object-fit:contain;background:rgba(255,255,255,0.08);border-radius:0.5rem;padding:4px;">
+    <div>
+      <div class="f-brand">Sree Vedaa Sujok &amp; Acupuncture Therapy Centre</div>
+      <div>Plot No 7, Sector 12, MVP Colony, Visakhapatnam · <a href="tel:9640553411">9640553411</a></div>
+    </div>
   </div>
   <div style="text-align:right">
     <div>Acupuncture in Visakhapatnam · Sujok Therapy Vizag · Natural Pain Treatment Vizag</div>
