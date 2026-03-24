@@ -34,7 +34,7 @@ export default function Footer() {
       {/* Right — SEO keywords + copyright */}
       <div style={{ textAlign: 'right' }}>
         <div>Acupuncture in Visakhapatnam · Sujok Therapy Vizag · Natural Pain Treatment Vizag</div>
-        <div style={{ marginTop: '0.3rem' }}>© {new Date().getFullYear()} Sree Vedaa. All rights reserved.</div>
+        <div suppressHydrationWarning style={{ marginTop: '0.3rem' }}>© {new Date().getFullYear()} Sree Vedaa. All rights reserved.</div>
       </div>
     </footer>
   );

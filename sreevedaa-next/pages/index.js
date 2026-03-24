@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
@@ -14,6 +15,14 @@ import FloatingWidgets from '../components/FloatingWidgets';
 import ScrollAnimator from '../components/ScrollAnimator';
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <>
       <Head>
