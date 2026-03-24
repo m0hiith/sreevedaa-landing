@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sree Vedaa Sujok & Acupuncture Therapy Centre | Natural Healing Visakhapatnam</title>
+<meta name="description" content="Best acupuncture in Visakhapatnam. Sujok therapy Vizag, natural pain treatment for back pain, PCOD, stress, diabetes. Drug-free healing at MVP Colony, Vizag.">
+<meta name="keywords" content="acupuncture in Visakhapatnam, sujok therapy Vizag, natural pain treatment Vizag, acupuncture Vizag, Ayurvedic therapy Visakhapatnam">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest: #2D4B3B;
+    --forest-light: #3d6450;
+    --sage: #8C9D5E;
+    --sage-light: #b5c98a;
+    --warm: #C59B6D;
+    --warm-light: #debb99;
+    --cream: #F8F5F0;
+    --cream-dark: #ede8e0;
+    --charcoal: #2c2c2c;
+    --text-muted: #6b7068;
+    --gold: #b8952a;
+    --gold-light: #d4b05a;
+    --white: #ffffff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    overflow-x: hidden;
+  }
+
+  /* ===== NAV ===== */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 3rem;
+    background: rgba(248,245,240,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(45,75,59,0.1);
+    transition: all 0.3s;
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .nav-logo .logo-mark {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--forest), var(--sage));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+  }
+  .nav-logo-text { line-height: 1.1; }
+  .nav-logo-text .brand { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--forest); }
+  .nav-logo-text .tagline { font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--charcoal); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--forest); }
+  .nav-cta {
+    background: var(--forest); color: white; border: none;
+    padding: 0.6rem 1.5rem; border-radius: 2rem; font-family: 'Jost', sans-serif;
+    font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: all 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .nav-cta:hover { background: var(--forest-light); transform: translateY(-1px); }
+  .hamburger { display: none; flex-direction: column; gap: 4px; cursor: pointer; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--forest); border-radius: 2px; transition: 0.3s; }
+
+  /* ===== HERO ===== */
+  #hero {
+    min-height: 100vh;
+    background: linear-gradient(155deg, #e8ede3 0%, #f5f0e8 40%, #eae5d8 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 8rem 3rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero::before {
+    content: '';
+    position: absolute; top: 0; right: 0;
+    width: 55%; height: 100%;
+    background: linear-gradient(135deg, rgba(45,75,59,0.06) 0%, rgba(140,157,94,0.1) 100%);
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .hero-bg-leaves {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; overflow: hidden;
+  }
+  .leaf-deco {
+    position: absolute;
+    opacity: 0.07;
+    font-size: 8rem;
+    animation: floatLeaf 8s ease-in-out infinite;
+  }
+  .leaf-deco:nth-child(1) { top: 10%; left: 5%; font-size: 6rem; animation-delay: 0s; }
+  .leaf-deco:nth-child(2) { top: 60%; right: 8%; font-size: 10rem; animation-delay: -3s; }
+  .leaf-deco:nth-child(3) { bottom: 10%; left: 30%; font-size: 5rem; animation-delay: -5s; }
+  @keyframes floatLeaf {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+  .hero-content { position: relative; z-index: 2; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(45,75,59,0.08); border: 1px solid rgba(45,75,59,0.15);
+    padding: 0.4rem 1rem; border-radius: 2rem;
+    font-size: 0.78rem; color: var(--forest); font-weight: 500; letter-spacing: 0.06em;
+    margin-bottom: 1.5rem; text-transform: uppercase;
+  }
+  .hero-badge .dot { width: 6px; height: 6px; background: var(--sage); border-radius: 50%; }
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--forest);
+    margin-bottom: 1.2rem;
+  }
+  h1 em { font-style: italic; color: var(--sage); }
+  .hero-sub {
+    font-size: 1.05rem; color: var(--text-muted);
+    line-height: 1.7; max-width: 500px; margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+  .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--forest), var(--forest-light));
+    color: white; padding: 0.9rem 2rem; border-radius: 3rem;
+    font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 500;
+    text-decoration: none; transition: all 0.3s;
+    box-shadow: 0 8px 24px rgba(45,75,59,0.25);
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(45,75,59,0.35); }
+  .btn-whatsapp {
+    background: #25D366; color: white; padding: 0.9rem 2rem; border-radius: 3rem;
+    font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 500;
+    text-decoration: none; transition: all 0.3s;
+    box-shadow: 0 8px 24px rgba(37,211,102,0.3);
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(37,211,102,0.4); }
+  .hero-stats {
+    display: flex; gap: 2.5rem; margin-top: 3rem;
+    padding-top: 2rem; border-top: 1px solid rgba(45,75,59,0.12);
+  }
+  .stat { }
+  .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600; color: var(--forest); line-height: 1; }
+  .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.2rem; }
+
+  .hero-visual {
+    position: relative; z-index: 2;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-card-wrap {
+    position: relative; width: 380px; height: 480px;
+  }
+  .hero-main-card {
+    width: 100%; height: 100%;
+    background: linear-gradient(145deg, rgba(45,75,59,0.05), rgba(140,157,94,0.12));
+    border-radius: 2rem;
+    border: 1px solid rgba(45,75,59,0.1);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 1rem;
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-main-card::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232d4b3b' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-icon-main { font-size: 5rem; }
+  .hero-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--forest); font-weight: 600; text-align: center; }
+  .hero-card-sub { font-size: 0.85rem; color: var(--text-muted); text-align: center; max-width: 240px; line-height: 1.5; }
+
+  .floating-tag {
+    position: absolute;
+    background: white;
+    border-radius: 1rem;
+    padding: 0.7rem 1rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    display: flex; align-items: center; gap: 0.5rem;
+    font-size: 0.8rem; font-weight: 500; color: var(--charcoal);
+    animation: float 4s ease-in-out infinite;
+  }
+  .floating-tag:nth-child(2) { top: -15px; right: -20px; animation-delay: -1s; }
+  .floating-tag:nth-child(3) { bottom: 60px; left: -30px; animation-delay: -2s; }
+  .floating-tag:nth-child(4) { bottom: -15px; right: 30px; animation-delay: -3s; }
+  .tag-icon { font-size: 1.1rem; }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  /* ===== SECTION COMMONS ===== */
+  section { padding: 5rem 3rem; }
+  .section-label {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--sage); font-weight: 600; margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .section-label::before { content: ''; display: block; width: 30px; height: 1px; background: var(--sage); }
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 400; color: var(--forest); line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .section-desc { font-size: 1rem; color: var(--text-muted); line-height: 1.7; max-width: 560px; font-weight: 300; }
+  .center { text-align: center; }
+  .center .section-label { justify-content: center; }
+  .center .section-label::before { display: none; }
+  .center .section-desc { margin: 0 auto; }
+
+  /* ===== SERVICES ===== */
+  #services { background: var(--white); }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem;
+  }
+  .service-card {
+    background: var(--cream);
+    border: 1px solid rgba(45,75,59,0.08);
+    border-radius: 1.25rem;
+    padding: 2rem 1.75rem;
+    transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
+    cursor: pointer;
+    position: relative; overflow: hidden;
+  }
+  .service-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--forest), var(--sage));
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(45,75,59,0.1); }
+  .service-card:hover::after { transform: scaleX(1); }
+  .service-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+  .service-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--forest); margin-bottom: 0.5rem; }
+  .service-benefit { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+  .service-tag {
+    display: inline-block; margin-top: 1rem;
+    background: rgba(45,75,59,0.08); color: var(--forest);
+    font-size: 0.72rem; padding: 0.25rem 0.7rem; border-radius: 1rem;
+    font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;
+  }
+
+  /* ===== CONDITIONS ===== */
+  #conditions {
+    background: linear-gradient(160deg, var(--forest) 0%, #1e3829 100%);
+    color: white; position: relative; overflow: hidden;
+  }
+  #conditions::before {
+    content: ''; position: absolute; top: -50%; right: -10%;
+    width: 600px; height: 600px; border-radius: 50%;
+    background: rgba(140,157,94,0.08); pointer-events: none;
+  }
+  #conditions .section-label { color: var(--sage-light); }
+  #conditions h2 { color: white; }
+  #conditions .section-desc { color: rgba(255,255,255,0.65); }
+  .conditions-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 3rem;
+  }
+  .condition-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .condition-item:hover {
+    background: rgba(140,157,94,0.15);
+    border-color: rgba(140,157,94,0.3);
+    transform: translateY(-4px);
+  }
+  .condition-icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
+  .condition-name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: white; margin-bottom: 0.3rem; }
+  .condition-note { font-size: 0.78rem; color: rgba(255,255,255,0.5); line-height: 1.4; }
+  .conditions-cta-row { text-align: center; margin-top: 3rem; }
+
+  /* ===== BENEFITS ===== */
+  #benefits { background: var(--cream); }
+  .benefits-wrap {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 3rem;
+  }
+  .benefits-list { display: flex; flex-direction: column; gap: 1.25rem; }
+  .benefit-row {
+    display: flex; align-items: flex-start; gap: 1rem;
+    padding: 1.2rem; border-radius: 1rem;
+    background: white; border: 1px solid rgba(45,75,59,0.07);
+    transition: all 0.25s;
+  }
+  .benefit-row:hover { box-shadow: 0 8px 24px rgba(45,75,59,0.08); transform: translateX(4px); }
+  .benefit-icon-wrap {
+    width: 44px; height: 44px; min-width: 44px;
+    background: rgba(45,75,59,0.08);
+    border-radius: 0.75rem;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+  }
+  .benefit-text .b-title { font-weight: 600; font-size: 0.95rem; color: var(--forest); }
+  .benefit-text .b-desc { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem; line-height: 1.4; }
+  .benefits-visual {
+    background: linear-gradient(145deg, var(--forest), #1e3829);
+    border-radius: 2rem;
+    padding: 3rem;
+    color: white;
+    position: relative; overflow: hidden;
+  }
+  .benefits-visual::before {
+    content: '🌿'; position: absolute; font-size: 8rem;
+    bottom: -1rem; right: -1rem; opacity: 0.1;
+  }
+  .bv-headline { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; margin-bottom: 0.75rem; }
+  .bv-desc { font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 2rem; }
+  .bv-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .bv-badge {
+    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.4rem 0.9rem; border-radius: 2rem;
+    font-size: 0.8rem; color: rgba(255,255,255,0.9); font-weight: 500;
+  }
+
+  /* ===== SPECIAL THERAPIES ===== */
+  #special { background: white; }
+  .special-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem; }
+  .special-card {
+    border-radius: 1.5rem; overflow: hidden;
+    border: 1px solid rgba(45,75,59,0.1);
+    transition: all 0.3s;
+  }
+  .special-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(45,75,59,0.12); }
+  .special-card-header {
+    padding: 2.5rem 2rem 2rem;
+    position: relative;
+  }
+  .sc-kerala .special-card-header { background: linear-gradient(135deg, #e8f0e3 0%, #f5f0e8 100%); }
+  .sc-chair .special-card-header { background: linear-gradient(135deg, #1e3829 0%, #2D4B3B 100%); }
+  .sc-chair .special-card-header * { color: white !important; }
+  .sc-chair .sc-tag { background: rgba(255,255,255,0.2) !important; color: white !important; border-color: rgba(255,255,255,0.3) !important; }
+  .special-card-body { padding: 2rem; }
+  .sc-tag {
+    display: inline-block;
+    background: rgba(45,75,59,0.08); color: var(--forest);
+    font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 2rem;
+    border: 1px solid rgba(45,75,59,0.15); margin-bottom: 1rem;
+  }
+  .sc-title { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; color: var(--forest); margin-bottom: 0.5rem; }
+  .sc-sub { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+  .sc-icon { font-size: 3rem; position: absolute; right: 2rem; top: 2rem; opacity: 0.6; }
+  .sc-therapies { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; }
+  .sc-therapy {
+    background: var(--cream); border: 1px solid rgba(45,75,59,0.1);
+    padding: 0.4rem 0.9rem; border-radius: 2rem;
+    font-size: 0.8rem; color: var(--forest); font-weight: 500;
+  }
+  .sc-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+  .sc-modes {
+    display: flex; align-items: center; gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .sc-modes-badge {
+    background: var(--gold); color: white;
+    font-size: 0.8rem; font-weight: 600; padding: 0.4rem 1rem; border-radius: 2rem;
+  }
+
+  /* ===== TESTIMONIALS ===== */
+  #testimonials { background: var(--cream-dark); }
+  .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .testi-card {
+    background: white; border-radius: 1.25rem; padding: 2rem;
+    border: 1px solid rgba(45,75,59,0.07);
+    transition: all 0.3s;
+    position: relative;
+  }
+  .testi-card::before { content: '"'; font-family: 'Cormorant Garamond', serif; font-size: 5rem; line-height: 1; color: rgba(45,75,59,0.07); position: absolute; top: 0.5rem; left: 1.5rem; }
+  .testi-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(45,75,59,0.1); }
+  .testi-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 1rem; }
+  .testi-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; font-weight: 300; }
+  .testi-author { display: flex; align-items: center; gap: 0.75rem; }
+  .testi-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--sage), var(--forest));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.9rem; font-weight: 600; color: white; font-family: 'Jost', sans-serif;
+  }
+  .testi-name { font-weight: 600; font-size: 0.9rem; color: var(--charcoal); }
+  .testi-location { font-size: 0.75rem; color: var(--text-muted); }
+
+  /* ===== PRICING ===== */
+  #pricing { background: white; }
+  .pricing-intro {
+    background: linear-gradient(135deg, rgba(197,155,109,0.1), rgba(45,75,59,0.05));
+    border: 1px solid rgba(197,155,109,0.2);
+    border-radius: 1.25rem; padding: 1.5rem 2rem;
+    margin-top: 2rem; margin-bottom: 3rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .pi-icon { font-size: 1.8rem; }
+  .pi-text strong { display: block; color: var(--forest); font-size: 1rem; margin-bottom: 0.2rem; }
+  .pi-text span { font-size: 0.85rem; color: var(--text-muted); }
+  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .price-card {
+    border-radius: 1.5rem; overflow: hidden;
+    border: 1px solid rgba(45,75,59,0.1);
+    transition: all 0.3s;
+    position: relative;
+  }
+  .price-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(45,75,59,0.12); }
+  .price-card.featured {
+    border-color: var(--forest);
+    box-shadow: 0 8px 30px rgba(45,75,59,0.15);
+  }
+  .featured-badge {
+    position: absolute; top: 1rem; right: 1rem;
+    background: var(--gold); color: white;
+    font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 2rem;
+  }
+  .price-header { background: var(--cream); padding: 2rem 1.75rem 1.5rem; }
+  .featured .price-header { background: linear-gradient(135deg, var(--forest), #1e3829); }
+  .featured .ph-name { color: white !important; }
+  .featured .ph-desc { color: rgba(255,255,255,0.65) !important; }
+  .ph-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--forest); }
+  .ph-desc { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem; }
+  .price-body { padding: 1.75rem; }
+  .price-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem; font-weight: 600; color: var(--forest); line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+  .price-amount span { font-size: 1rem; font-weight: 400; }
+  .price-original { font-size: 0.85rem; color: var(--text-muted); text-decoration: line-through; margin-bottom: 1.25rem; }
+  .price-features { list-style: none; margin-bottom: 1.75rem; display: flex; flex-direction: column; gap: 0.6rem; }
+  .price-features li { font-size: 0.85rem; color: var(--charcoal); display: flex; align-items: center; gap: 0.5rem; }
+  .price-features li::before { content: '✓'; color: var(--sage); font-weight: 700; }
+  .btn-book {
+    display: block; text-align: center; width: 100%;
+    background: var(--cream-dark); color: var(--forest);
+    border: 1px solid rgba(45,75,59,0.2);
+    padding: 0.8rem; border-radius: 2rem;
+    font-family: 'Jost', sans-serif; font-size: 0.88rem; font-weight: 600;
+    text-decoration: none; transition: all 0.2s; cursor: pointer;
+  }
+  .btn-book:hover { background: var(--forest); color: white; }
+  .price-card.featured .btn-book { background: var(--gold); color: white; border-color: transparent; }
+  .price-card.featured .btn-book:hover { background: #a07d1e; }
+
+  /* ===== CONTACT ===== */
+  #contact {
+    background: linear-gradient(160deg, var(--forest) 0%, #1b3326 100%);
+    color: white;
+  }
+  #contact .section-label { color: var(--sage-light); }
+  #contact h2 { color: white; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem; }
+  .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+  .contact-item { display: flex; align-items: flex-start; gap: 1rem; }
+  .ci-icon {
+    width: 44px; height: 44px; min-width: 44px;
+    background: rgba(255,255,255,0.1); border-radius: 0.75rem;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem;
+  }
+  .ci-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2rem; }
+  .ci-value { font-size: 0.95rem; color: white; font-weight: 500; }
+  .ci-value a { color: white; text-decoration: none; }
+  .contact-map {
+    background: rgba(255,255,255,0.05);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    min-height: 320px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .contact-map iframe { width: 100%; height: 100%; min-height: 320px; border: none; }
+  .contact-btns { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 2rem; }
+  .btn-call {
+    background: rgba(255,255,255,0.1); color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.9rem 1.5rem; border-radius: 3rem;
+    font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 500;
+    text-decoration: none; transition: all 0.2s;
+    display: flex; align-items: center; gap: 0.5rem; justify-content: center;
+  }
+  .btn-call:hover { background: rgba(255,255,255,0.2); }
+  .btn-wa-contact {
+    background: #25D366; color: white;
+    padding: 0.9rem 1.5rem; border-radius: 3rem;
+    font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 500;
+    text-decoration: none; transition: all 0.2s;
+    display: flex; align-items: center; gap: 0.5rem; justify-content: center;
+  }
+  .btn-wa-contact:hover { background: #1db855; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: #111f18; color: rgba(255,255,255,0.6);
+    padding: 2rem 3rem;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+    font-size: 0.82rem;
+  }
+  footer .f-brand { color: rgba(255,255,255,0.9); font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600; }
+  footer a { color: var(--sage-light); text-decoration: none; }
+
+  /* ===== STICKY / FLOATING ===== */
+  .sticky-call {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
+    background: var(--forest); color: white;
+    text-align: center; padding: 1rem;
+    font-family: 'Jost', sans-serif; font-size: 0.95rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .wa-float {
+    position: fixed; bottom: 24px; right: 24px; z-index: 998;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: #25D366;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem; text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    transition: all 0.3s;
+    animation: pulse-wa 3s ease-in-out infinite;
+  }
+  .wa-float:hover { transform: scale(1.1); }
+  @keyframes pulse-wa {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 4px 30px rgba(37,211,102,0.6), 0 0 0 8px rgba(37,211,102,0.1); }
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1024px) {
+    #hero { grid-template-columns: 1fr; text-align: center; padding: 7rem 2rem 4rem; }
+    .hero-visual { display: none; }
+    .hero-sub { margin: 0 auto 2.5rem; }
+    .hero-btns { justify-content: center; }
+    .hero-stats { justify-content: center; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .conditions-grid { grid-template-columns: repeat(2, 1fr); }
+    .pricing-grid { grid-template-columns: 1fr; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .special-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .benefits-wrap { grid-template-columns: 1fr; }
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    section { padding: 4rem 1.5rem; }
+    .sticky-call { display: block; }
+    .wa-float { bottom: 80px; }
+  }
+  @media (max-width: 600px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .conditions-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-stats { flex-direction: column; align-items: center; gap: 1.5rem; }
+  }
+
+  /* ===== ANIMATIONS ===== */
+  .fade-up {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* ===== STRIP ===== */
+  .trust-strip {
+    background: var(--forest);
+    padding: 1rem 3rem;
+    display: flex; align-items: center; justify-content: center;
+    gap: 3rem; flex-wrap: wrap;
+  }
+  .ts-item { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.8); font-size: 0.82rem; font-weight: 500; }
+  .ts-icon { font-size: 1rem; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <div class="logo-mark">🌿</div>
+    <div class="nav-logo-text">
+      <div class="brand">Sree Vedaa</div>
+      <div class="tagline">Heal Naturally · Live Happily</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">Therapies</a></li>
+    <li><a href="#conditions">Conditions</a></li>
+    <li><a href="#special">Special Care</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:9640553411" class="nav-cta">📞 Book Now</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-leaves">
+    <div class="leaf-deco">🍃</div>
+    <div class="leaf-deco">🌿</div>
+    <div class="leaf-deco">☘️</div>
+  </div>
+  <div class="hero-content fade-up">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Natural Healing · Drug-Free · Visakhapatnam
+    </div>
+    <h1>Heal Naturally with <em>Sujok &amp; Acupuncture</em> Therapy</h1>
+    <p class="hero-sub">Permanent relief from back pain, stress, PCOD, and lifestyle diseases — without medicines or side effects. Trusted by 1000+ patients in Vizag.</p>
+    <div class="hero-btns">
+      <a href="tel:9640553411" class="btn-primary">📅 Book Appointment</a>
+      <a href="https://wa.me/919640553411?text=Hi%2C%20I%20want%20to%20book%20an%20appointment%20at%20Sree%20Vedaa" target="_blank" class="btn-whatsapp">💬 Chat on WhatsApp</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">1000+</div><div class="stat-label">Happy Patients</div></div>
+      <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Therapy Types</div></div>
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Years Experience</div></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card-wrap">
+      <div class="hero-main-card">
+        <div class="hero-icon-main">🌿</div>
+        <div class="hero-card-title">Sree Vedaa Therapy</div>
+        <div class="hero-card-sub">Authentic Ayurvedic & Acupuncture healing at MVP Colony, Visakhapatnam</div>
+      </div>
+      <div class="floating-tag"><span class="tag-icon">🎯</span><span>Drug-Free Healing</span></div>
+      <div class="floating-tag"><span class="tag-icon">✅</span><span>1000+ Cured</span></div>
+      <div class="floating-tag"><span class="tag-icon">🏡</span><span>Home Services</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="ts-item"><span class="ts-icon">🌿</span> Drug-Free Treatment</div>
+  <div class="ts-item"><span class="ts-icon">🏅</span> Certified Therapists</div>
+  <div class="ts-item"><span class="ts-icon">🏠</span> Home Services Available</div>
+  <div class="ts-item"><span class="ts-icon">🕐</span> Open 7AM – 8PM Daily</div>
+  <div class="ts-item"><span class="ts-icon">📞</span> Free First Consultation</div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="fade-up">
+  <div class="center">
+    <div class="section-label">Our Therapies</div>
+    <h2>Ancient Healing,<br>Modern Care</h2>
+    <p class="section-desc">Each therapy is personalized to your body's needs — rooted in centuries-old traditions of Ayurveda and natural healing.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">🪡</div>
+      <div class="service-name">Acupuncture Therapy</div>
+      <div class="service-benefit">Stimulates energy pathways to relieve chronic pain and restore natural balance.</div>
+      <div class="service-tag">Most Popular</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🤲</div>
+      <div class="service-name">Sujok Therapy</div>
+      <div class="service-benefit">Treats the entire body through pressure points on hands and feet — fast, effective healing.</div>
+      <div class="service-tag">Specialty</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🫙</div>
+      <div class="service-name">Cupping Therapy</div>
+      <div class="service-benefit">Removes toxins, improves blood flow and relieves deep muscle tension naturally.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🦶</div>
+      <div class="service-name">Reflexology</div>
+      <div class="service-benefit">Foot and hand pressure therapy that activates healing across all organ systems.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏺</div>
+      <div class="service-name">Panchakarma</div>
+      <div class="service-benefit">Complete Ayurvedic detox — cleanses body, mind and restores doshic balance.</div>
+      <div class="service-tag">Kerala Special</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🛕</div>
+      <div class="service-name">Shirodhara</div>
+      <div class="service-benefit">Warm oil poured over the forehead — melts away stress, anxiety and insomnia.</div>
+      <div class="service-tag">Kerala Special</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS -->
+<section id="conditions" class="fade-up">
+  <div class="center">
+    <div class="section-label">Conditions We Treat</div>
+    <h2>We Heal What<br>Medicines Can't Fix</h2>
+    <p class="section-desc" style="color:rgba(255,255,255,0.6)">Looking for natural pain treatment in Vizag? We treat these conditions with zero side effects.</p>
+  </div>
+  <div class="conditions-grid">
+    <div class="condition-item">
+      <div class="condition-icon">🦴</div>
+      <div class="condition-name">Back Pain</div>
+      <div class="condition-note">Cervical, lumbar & spine issues treated without surgery</div>
+    </div>
+    <div class="condition-item">
+      <div class="condition-icon">🧠</div>
+      <div class="condition-name">Migraine & Headache</div>
+      <div class="condition-note">Chronic migraine relief through targeted therapy</div>
+    </div>
+    <div class="condition-item">
+      <div class="condition-icon">😮‍💨</div>
+      <div class="condition-name">Stress & Anxiety</div>
+      <div class="condition-note">Calm your nervous system naturally and durably</div>
+    </div>
+    <div class="condition-item">
+      <div class="condition-icon">🍬</div>
+      <div class="condition-name">Diabetes</div>
+      <div class="condition-note">Manage blood sugar with holistic lifestyle therapies</div>
+    </div>
+    <div class="condition-item">
+      <div class="condition-icon">🦋</div>
+      <div class="condition-name">Thyroid</div>
+      <div class="condition-note">Balance thyroid function through Ayurvedic protocols</div>
+    </div>
+    <div class="condition-item">
+      <div class="condition-icon">🌸</div>
+      <div class="condition-name">PCOD / PCOS</div>
+      <div class="condition-note">Hormonal balance and menstrual health restoration</div>
+    </div>
+    <div class="condition-item">
+      <div class="condition-icon">🦵</div>
+      <div class="condition-name">Joint Pain</div>
+      <div class="condition-note">Arthritis, knee pain & spondylitis relief</div>
+    </div>
+    <div class="condition-item">
+      <div class="condition-icon">🏋️</div>
+      <div class="condition-name">Diet & Weight</div>
+      <div class="condition-note">Personalized natural weight management plans</div>
+    </div>
+  </div>
+  <div class="conditions-cta-row">
+    <a href="tel:9640553411" class="btn-primary" style="display:inline-flex">📞 Talk to Our Expert — Free</a>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits" class="fade-up">
+  <div class="benefits-wrap">
+    <div>
+      <div class="section-label">Why Choose Natural</div>
+      <h2>Healing Without<br>Harmful Side Effects</h2>
+      <p class="section-desc">Unlike conventional medicine, our treatments work with your body — not against it.</p>
+      <div class="benefits-list" style="margin-top:2rem">
+        <div class="benefit-row">
+          <div class="benefit-icon-wrap">🌿</div>
+          <div class="benefit-text">
+            <div class="b-title">100% Drug-Free</div>
+            <div class="b-desc">No medicines, no chemicals, no addiction. Pure natural healing.</div>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon-wrap">❤️</div>
+          <div class="benefit-text">
+            <div class="b-title">Improves Blood Circulation</div>
+            <div class="b-desc">Therapies stimulate lymphatic and circulatory flow throughout the body.</div>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon-wrap">😴</div>
+          <div class="benefit-text">
+            <div class="b-title">Better Sleep & Relaxation</div>
+            <div class="b-desc">Deep healing sessions promote restorative sleep naturally.</div>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon-wrap">🧹</div>
+          <div class="benefit-text">
+            <div class="b-title">Full Body Detoxification</div>
+            <div class="b-desc">Remove toxins accumulated from stress, diet and environment.</div>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon-wrap">🎯</div>
+          <div class="benefit-text">
+            <div class="b-title">Personalized Treatment Plan</div>
+            <div class="b-desc">Every patient gets a custom therapy plan based on their body type and condition.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="benefits-visual">
+      <div class="bv-headline">Heal from the Root,<br>Not Just the Symptom</div>
+      <div class="bv-desc">Sree Vedaa's integrated approach targets the root cause of your ailments using time-tested therapies from Sujok, Acupuncture and Kerala Ayurveda — all under one roof in Visakhapatnam.</div>
+      <div class="bv-badges">
+        <span class="bv-badge">🏠 Home Visits</span>
+        <span class="bv-badge">✅ Safe & Effective</span>
+        <span class="bv-badge">🎓 Certified Experts</span>
+        <span class="bv-badge">🌿 Holistic Wellness</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIAL THERAPIES -->
+<section id="special" class="fade-up">
+  <div class="center">
+    <div class="section-label">Signature Experiences</div>
+    <h2>Special Therapies<br>Only at Sree Vedaa</h2>
+    <p class="section-desc">Premium healing modalities that set us apart from any other clinic in Visakhapatnam.</p>
+  </div>
+  <div class="special-grid">
+    <div class="special-card sc-kerala">
+      <div class="special-card-header">
+        <div class="sc-tag">Kerala Authentic</div>
+        <div class="sc-title">Kerala Ayurvedic Therapies</div>
+        <div class="sc-sub">Transported from God's Own Country — now in Vizag</div>
+        <div class="sc-icon">🌴</div>
+      </div>
+      <div class="special-card-body">
+        <div class="sc-therapies">
+          <span class="sc-therapy">Panchakarma</span>
+          <span class="sc-therapy">Shirodhara</span>
+          <span class="sc-therapy">Mud Bath</span>
+          <span class="sc-therapy">Steam Bath</span>
+        </div>
+        <div class="sc-desc">Experience Kerala's 5,000-year-old healing tradition. Our Panchakarma detox and Shirodhara oil therapy deeply rejuvenate mind, body and soul — administered by trained Ayurvedic professionals.</div>
+      </div>
+    </div>
+    <div class="special-card sc-chair">
+      <div class="special-card-header">
+        <div class="sc-tag">Advanced Technology</div>
+        <div class="sc-title">3D Therapeutic Massage Chair</div>
+        <div class="sc-sub">22 Wellness Modes for full-body relief</div>
+        <div class="sc-icon">💺</div>
+      </div>
+      <div class="special-card-body">
+        <div class="sc-therapies">
+          <span class="sc-therapy" style="background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2)">Kneading</span>
+          <span class="sc-therapy" style="background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2)">Shiatsu</span>
+          <span class="sc-therapy" style="background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2)">Tapping</span>
+          <span class="sc-therapy" style="background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2)">Knocking</span>
+        </div>
+        <div class="sc-desc" style="color:rgba(255,255,255,0.7)">Our advanced 3D massage chair simulates expert hand techniques across 22 precise modes. Available as both single sessions and subscription packages.</div>
+        <div class="sc-modes">
+          <div class="sc-modes-badge">22 Wellness Modes</div>
+          <span style="font-size:0.8rem;color:rgba(255,255,255,0.6)">Subscription available</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Special Cleansing -->
+  <div style="margin-top:1.5rem;background:linear-gradient(135deg,rgba(197,155,109,0.12),rgba(45,75,59,0.06));border:1px solid rgba(197,155,109,0.2);border-radius:1.5rem;padding:2rem 2.5rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;">
+    <div style="font-size:3rem">🧬</div>
+    <div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--forest);margin-bottom:0.4rem">Special Cleansing Therapy</div>
+      <div style="font-size:0.9rem;color:var(--text-muted);line-height:1.6;max-width:600px">We help cleanse and eliminate chronic diseases like <strong style="color:var(--forest)">Migraine, Ringworm, Psoriasis, PCOD, PCOS</strong> and many other health disorders through deep cellular cleansing protocols.</div>
+    </div>
+    <a href="tel:9640553411" class="btn-primary" style="margin-left:auto;white-space:nowrap">Learn More</a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="fade-up">
+  <div class="center">
+    <div class="section-label">Patient Stories</div>
+    <h2>Real People,<br>Real Recovery</h2>
+    <p class="section-desc">Hear from patients who found lasting relief through natural therapy in Visakhapatnam.</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"I had chronic back pain for 6 years and tried everything — physiotherapy, medicines, injections. Nothing worked permanently. After 8 sessions of acupuncture at Sree Vedaa, I finally feel like myself again. Completely drug-free!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">RK</div>
+        <div><div class="testi-name">Ravi Kumar</div><div class="testi-location">Steel Plant Colony, Vizag</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"My PCOD was causing irregular periods and weight issues for 3 years. The sujok therapy and personalized diet plan here worked like magic. I'm now regular for 6 months straight. Highly recommend to all women suffering silently."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">PL</div>
+        <div><div class="testi-name">Priya Lakshmi</div><div class="testi-location">Madhurawada, Vizag</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"I was diagnosed with Thyroid and was scared of lifelong medication. P. Kalyani garu explained everything patiently and the treatment is incredible. My TSH levels are back to normal after just 3 months of natural therapy."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SM</div>
+        <div><div class="testi-name">Suhasini Mehta</div><div class="testi-location">MVP Colony, Visakhapatnam</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"The Shirodhara session was the most relaxing experience of my life. I've been battling insomnia and anxiety for years. After 5 sessions, I sleep like a baby. The team is incredibly caring and professional."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">AV</div>
+        <div><div class="testi-name">Anil Varma</div><div class="testi-location">Dwaraka Nagar, Vizag</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"As a diabetic patient, I was taking 4 tablets a day. After starting Sree Vedaa's cleansing therapy, my fasting sugar went from 190 to 112 in 2 months. I've reduced 2 tablets already. Amazing results!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">VR</div>
+        <div><div class="testi-name">Venkata Rao</div><div class="testi-location">Gajuwaka, Vizag</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Cupping therapy for my tennis elbow saved me from surgery. The pain was 9/10 and I couldn't lift anything. After just 4 sessions with Uma Shankar Rao garu, I'm back to my normal life. Forever grateful!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">KN</div>
+        <div><div class="testi-name">Kiran Naidu</div><div class="testi-location">Rushikonda, Vizag</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="fade-up">
+  <div class="center">
+    <div class="section-label">Plans & Pricing</div>
+    <h2>Affordable Natural<br>Healing for Everyone</h2>
+    <p class="section-desc">Transparent, honest pricing — no hidden charges. Your health is priceless; our sessions are not.</p>
+  </div>
+  <div class="pricing-intro">
+    <div class="pi-icon">🎁</div>
+    <div class="pi-text">
+      <strong>Free First Consultation — No Commitment Needed</strong>
+      <span>Come in, share your concerns, and get a personalized treatment recommendation at zero cost.</span>
+    </div>
+  </div>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-header">
+        <div class="ph-name">Single Session</div>
+        <div class="ph-desc">Try any one therapy</div>
+      </div>
+      <div class="price-body">
+        <div class="price-amount">₹<span>500–1200</span></div>
+        <div class="price-original">Depending on therapy type</div>
+        <ul class="price-features">
+          <li>1 session of your chosen therapy</li>
+          <li>Free health consultation</li>
+          <li>Personalized advice</li>
+          <li>Home service available</li>
+        </ul>
+        <a href="tel:9640553411" class="btn-book">Book a Session</a>
+      </div>
+    </div>
+    <div class="price-card featured">
+      <div class="featured-badge">Best Value</div>
+      <div class="price-header featured">
+        <div class="ph-name">Wellness Package (10 Sessions)</div>
+        <div class="ph-desc">Most chosen by patients</div>
+      </div>
+      <div class="price-body">
+        <div class="price-amount">₹<span>4,999</span></div>
+        <div class="price-original">Worth ₹8,000+</div>
+        <ul class="price-features">
+          <li>10 sessions (any therapy mix)</li>
+          <li>Free consultation every visit</li>
+          <li>Diet & lifestyle guidance</li>
+          <li>Home service option</li>
+          <li>Progress tracking included</li>
+        </ul>
+        <a href="https://wa.me/919640553411?text=I'm%20interested%20in%20the%2010-session%20Wellness%20Package" class="btn-book" target="_blank">Book Package</a>
+      </div>
+    </div>
+    <div class="price-card">
+      <div class="price-header">
+        <div class="ph-name">Monthly Subscription</div>
+        <div class="ph-desc">For chronic condition management</div>
+      </div>
+      <div class="price-body">
+        <div class="price-amount">₹<span>8,999</span><span>/mo</span></div>
+        <div class="price-original">Unlimited sessions</div>
+        <ul class="price-features">
+          <li>Unlimited sessions per month</li>
+          <li>Priority appointment slots</li>
+          <li>Massage chair access included</li>
+          <li>Dedicated therapist assigned</li>
+          <li>Monthly health report</li>
+        </ul>
+        <a href="tel:9640553411" class="btn-book">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:1.5rem;font-size:0.82rem;color:var(--text-muted)">* Prices are indicative. Exact pricing shared after consultation. All packages include free first session.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-up">
+  <div class="section-label">Find Us</div>
+  <h2>Book Your<br>Free Consultation</h2>
+  <div class="contact-grid">
+    <div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="ci-icon">📞</div>
+          <div>
+            <div class="ci-label">Call Us</div>
+            <div class="ci-value"><a href="tel:9640553411">P Kalyani — 9640553411</a></div>
+            <div class="ci-value"><a href="tel:6281949281">P Uma Shankar Rao — 6281949281</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">📍</div>
+          <div>
+            <div class="ci-label">Address</div>
+            <div class="ci-value">Plot No 7, Sector 12, MVP Colony<br>Visakhapatnam, Andhra Pradesh</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">🕐</div>
+          <div>
+            <div class="ci-label">Clinic Hours</div>
+            <div class="ci-value">Monday – Saturday: 7:00 AM – 8:00 PM</div>
+            <div class="ci-value" style="color:rgba(255,255,255,0.5);font-size:0.82rem">Sunday by appointment</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">🏠</div>
+          <div>
+            <div class="ci-label">Home Services</div>
+            <div class="ci-value">Available across Visakhapatnam</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-btns">
+        <a href="tel:9640553411" class="btn-call">📞 Call P Kalyani — 9640553411</a>
+        <a href="tel:6281949281" class="btn-call">📞 Call P Uma Shankar Rao — 6281949281</a>
+        <a href="https://wa.me/919640553411?text=Hi%2C%20I'd%20like%20to%20book%20a%20free%20consultation%20at%20Sree%20Vedaa" target="_blank" class="btn-wa-contact">💬 WhatsApp for Appointment</a>
+      </div>
+    </div>
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.6!2d83.3425!3d17.7384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943b6f5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sMVP%20Colony%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Sree Vedaa location on Google Maps">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="f-brand">Sree Vedaa Sujok & Acupuncture Therapy Centre</div>
+    <div>Plot No 7, Sector 12, MVP Colony, Visakhapatnam · <a href="tel:9640553411">9640553411</a></div>
+  </div>
+  <div style="text-align:right">
+    <div>Acupuncture in Visakhapatnam · Sujok Therapy Vizag · Natural Pain Treatment Vizag</div>
+    <div style="margin-top:0.3rem">© 2025 Sree Vedaa. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- STICKY + FLOAT -->
+<a href="tel:9640553411" class="sticky-call">📞 Call Now — Free Consultation</a>
+<a href="https://wa.me/919640553411?text=Hi%2C%20I%20want%20to%20book%20an%20appointment" target="_blank" class="wa-float" title="Chat on WhatsApp">💬</a>
+
+<script>
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Stagger service cards
+  document.querySelectorAll('.service-card').forEach((card, i) => {
+    card.style.transitionDelay = (i * 0.08) + 's';
+    card.classList.add('fade-up');
+    observer.observe(card);
+  });
+
+  // Mobile nav
+  function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+    links.style.flexDirection = 'column';
+    links.style.position = 'fixed';
+    links.style.top = '70px'; links.style.left = '0'; links.style.right = '0';
+    links.style.background = 'rgba(248,245,240,0.97)';
+    links.style.padding = '1.5rem'; links.style.gap = '1.25rem';
+    links.style.backdropFilter = 'blur(12px)';
+    links.style.zIndex = '999';
+  }
+
+  // Sticky nav shadow
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').style.boxShadow = 
+      window.scrollY > 50 ? '0 4px 20px rgba(0,0,0,0.08)' : 'none';
+  });
+</script>
+</body>
+</html>
