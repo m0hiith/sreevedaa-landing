@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -19,7 +20,7 @@ export default function Navbar() {
         }}
       >
         {/* Logo — clickable, links to homepage */}
-        <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
           <Image
             src="/sreevedaa-logo.png"
             alt="Sree Vedaa — Heal Naturally Live Happily"
@@ -28,7 +29,7 @@ export default function Navbar() {
             priority
             style={{ objectFit: 'contain', width: 90, height: 'auto' }}
           />
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <ul className="nav-desktop-links" style={{ display: 'flex', gap: '2rem', listStyle: 'none', margin: 0, padding: 0 }}>
