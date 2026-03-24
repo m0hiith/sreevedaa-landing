@@ -36,7 +36,7 @@ export default function Navbar() {
             ['#services', 'Therapies'],
             ['#conditions', 'Conditions'],
             ['#special', 'Special Care'],
-            ['#pricing', 'Pricing'],
+            // ['#pricing', 'Pricing'],
             ['#contact', 'Contact'],
           ].map(([href, label]) => (
             <li key={href}>
@@ -96,7 +96,7 @@ export default function Navbar() {
             ['#services', 'Therapies'],
             ['#conditions', 'Conditions'],
             ['#special', 'Special Care'],
-            ['#pricing', 'Pricing'],
+            // ['#pricing', 'Pricing'],
             ['#contact', 'Contact'],
           ].map(([href, label]) => (
             <a key={href} href={href} onClick={() => setMenuOpen(false)}

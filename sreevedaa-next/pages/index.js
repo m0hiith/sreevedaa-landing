@@ -29,7 +29,7 @@ export default function Home() {
       <BenefitsSection />
       <SpecialTherapies />
       <TestimonialsSection />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <ContactSection />
       <Footer />
       <FloatingWidgets />
