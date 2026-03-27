@@ -16,7 +16,7 @@ export default function Footer() {
             src="/sreevedaa-logo.png"
             alt="Sree Vedaa Logo"
             width={100}
-            height={75}
+            height={100}
             style={{ objectFit: 'contain', width: 100, height: 'auto', display: 'block' }}
           />
         </div>

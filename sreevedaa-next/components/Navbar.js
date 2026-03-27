@@ -67,7 +67,7 @@ export default function Navbar() {
             src="/sreevedaa-logo.png"
             alt="Sree Vedaa — Heal Naturally Live Happily"
             width={90}
-            height={65}
+            height={90}
             priority
             style={{ objectFit: 'contain', width: 90, height: 'auto' }}
           />

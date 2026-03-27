@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section id="home" style={{
+    <section id="hero" style={{
       minHeight: '85vh',
       background: 'linear-gradient(155deg, #e8ede3 0%, #f5f0e8 40%, #eae5d8 100%)',
       display: 'grid',
@@ -21,7 +21,7 @@ export default function HeroSection() {
 
       {/* Leaf decorations */}
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', overflow: 'hidden' }}>
-        {[{ t:'10%', l:'5%', fs:'6rem', d:'0s' }, { t:'60%', r:'8%', fs:'10rem', d:'-3s' }, { b:'10%', l:'30%', fs:'5rem', d:'-5s' }].map((s, i) => (
+        {[{ t: '10%', l: '5%', fs: '6rem', d: '0s' }, { t: '60%', r: '8%', fs: '10rem', d: '-3s' }, { b: '10%', l: '30%', fs: '5rem', d: '-5s' }].map((s, i) => (
           <div key={i} style={{
             position: 'absolute', opacity: 0.07, fontSize: s.fs,
             top: s.t, left: s.l, right: s.r, bottom: s.b,
@@ -79,7 +79,7 @@ export default function HeroSection() {
           display: 'flex', gap: '2.5rem', marginTop: '3rem',
           paddingTop: '2rem', borderTop: '1px solid rgba(45,75,59,0.12)',
         }} className="hero-stats">
-          {[['1000+','Happy Patients'],['15+','Therapy Types'],['10+','Years Experience']].map(([num, label]) => (
+          {[['1000+', 'Happy Patients'], ['15+', 'Therapy Types'], ['10+', 'Years Experience']].map(([num, label]) => (
             <div key={label}>
               <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 600, color: '#2D4B3B', lineHeight: 1 }}>{num}</div>
               <div style={{ fontSize: '0.75rem', color: '#6b7068', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.2rem' }}>{label}</div>
