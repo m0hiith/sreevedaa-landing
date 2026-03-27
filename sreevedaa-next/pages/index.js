@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import TrustStrip from '../components/TrustStrip';
 import ServicesSection from '../components/ServicesSection';
+import TherapiesSection from '../components/TherapiesSection';
 import ConditionsSection from '../components/ConditionsSection';
 import BenefitsSection from '../components/BenefitsSection';
 import SpecialTherapies from '../components/SpecialTherapies';
@@ -34,6 +35,7 @@ export default function Home() {
       <HeroSection />
       <TrustStrip />
       <ServicesSection />
+      <TherapiesSection />
       <ConditionsSection />
       <BenefitsSection />
       <SpecialTherapies />
