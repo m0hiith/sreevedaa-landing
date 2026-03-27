@@ -1,9 +1,51 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+const NAV_ITEMS = [
+  ['#home', 'Home'],
+  ['#therapies', 'Therapies'],
+  ['#kerala', 'Kerala Ayurvedic Treatments'],
+  ['#testimonials', 'Testimonies'],
+  ['#contact', 'Reach Us'],
+];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('#home');
+
+  useEffect(() => {
+    const sectionIds = NAV_ITEMS.map(([href]) => href.replace('#', ''));
+    const observers = [];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveSection(`#${id}`);
+          }
+        },
+        { rootMargin: '-30% 0px -60% 0px', threshold: 0 }
+      );
+
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
+
+  const handleClick = (e, href) => {
+    e.preventDefault();
+    const el = document.querySelector(href);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    setMenuOpen(false);
+  };
 
   return (
     <>
@@ -33,19 +75,23 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <ul className="nav-desktop-links" style={{ display: 'flex', gap: '2rem', listStyle: 'none', margin: 0, padding: 0 }}>
-          {[
-            ['#services', 'Therapies'],
-            ['#conditions', 'Conditions'],
-            ['#special', 'Special Care'],
-            // ['#pricing', 'Pricing'],
-            ['#contact', 'Contact'],
-          ].map(([href, label]) => (
+          {NAV_ITEMS.map(([href, label]) => (
             <li key={href}>
               <a
                 href={href}
-                style={{ textDecoration: 'none', color: '#2c2c2c', fontSize: '0.85rem', fontWeight: 500, letterSpacing: '0.04em', transition: 'color 0.2s' }}
+                onClick={(e) => handleClick(e, href)}
+                style={{
+                  textDecoration: 'none',
+                  color: activeSection === href ? '#2D4B3B' : '#2c2c2c',
+                  fontSize: '0.85rem',
+                  fontWeight: activeSection === href ? 700 : 500,
+                  letterSpacing: '0.04em',
+                  transition: 'color 0.2s, font-weight 0.2s',
+                  borderBottom: activeSection === href ? '2px solid #8C9D5E' : '2px solid transparent',
+                  paddingBottom: '0.2rem',
+                }}
                 onMouseOver={e => (e.target.style.color = '#2D4B3B')}
-                onMouseOut={e => (e.target.style.color = '#2c2c2c')}
+                onMouseOut={e => { if (activeSection !== href) e.target.style.color = '#2c2c2c'; }}
               >
                 {label}
               </a>
@@ -93,15 +139,14 @@ export default function Navbar() {
           padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.25rem',
           boxShadow: '0 8px 30px rgba(0,0,0,0.08)',
         }}>
-          {[
-            ['#services', 'Therapies'],
-            ['#conditions', 'Conditions'],
-            ['#special', 'Special Care'],
-            // ['#pricing', 'Pricing'],
-            ['#contact', 'Contact'],
-          ].map(([href, label]) => (
-            <a key={href} href={href} onClick={() => setMenuOpen(false)}
-              style={{ textDecoration: 'none', color: '#2c2c2c', fontSize: '0.95rem', fontWeight: 500 }}>
+          {NAV_ITEMS.map(([href, label]) => (
+            <a key={href} href={href} onClick={(e) => handleClick(e, href)}
+              style={{
+                textDecoration: 'none',
+                color: activeSection === href ? '#2D4B3B' : '#2c2c2c',
+                fontSize: '0.95rem',
+                fontWeight: activeSection === href ? 700 : 500,
+              }}>
               {label}
             </a>
           ))}
@@ -116,6 +161,7 @@ export default function Navbar() {
       )}
 
       <style>{`
+        html { scroll-behavior: smooth; }
         @media (max-width: 1024px) {
           .nav-desktop-links { display: none !important; }
           .nav-hamburger { display: flex !important; }

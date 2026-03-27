@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section id="hero" style={{
+    <section id="home" style={{
       minHeight: '85vh',
       background: 'linear-gradient(155deg, #e8ede3 0%, #f5f0e8 40%, #eae5d8 100%)',
       display: 'grid',
