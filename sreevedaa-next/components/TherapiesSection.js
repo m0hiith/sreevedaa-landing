@@ -34,20 +34,59 @@ const therapies = [
     accent: "linear-gradient(135deg, #e8f0e3 0%, #ede8f0 100%)",
   },
   {
-    title: "Panchakarma",
-    short_description: "Ayurveda's deepest cleanse — for body, mind, and immunity.",
-    full_content: "Panchakarma is the cornerstone of Ayurvedic medicine and one of the most thorough detox journeys available. It systematically eliminates accumulated toxins from every tissue and channel in the body, restoring the natural harmony of all three doshas. The result is sharper immunity, stronger digestion, lighter energy, and a renewed sense of overall well-being — achieved entirely through gentle, natural Ayurvedic methods.",
+    title: "Panchakarma Therapy",
+    short_description: "Ayurveda's deepest cleanse — five powerful actions for body, mind & immunity.",
+    full_content: "Panchakarma is a traditional Ayurvedic detoxification and rejuvenation therapy designed to cleanse the body of toxins (Ama) and restore balance between the mind, body, and spirit. The word \"Panchakarma\" means \"five actions,\" referring to five therapeutic procedures that eliminate deep-rooted impurities from the body. Modern lifestyles, unhealthy diets, stress, and environmental toxins lead to the accumulation of harmful substances — Panchakarma helps detoxify the system, strengthen immunity, restore natural balance of Doshas (Vata, Pitta, Kapha), and improve overall well-being.",
+    benefits: ["Deep detoxification and cleansing", "Improved digestion and metabolism", "Enhanced immunity", "Stress relief and mental clarity", "Better skin health and glow", "Slows aging and rejuvenates tissues", "Improves sleep quality"],
+    conditions: ["Chronic fatigue and stress", "Digestive disorders", "Joint pain and arthritis", "Skin disorders", "Hormonal imbalance", "Obesity", "Migraine and neurological issues"],
+    advantages: ["Personalized treatments based on body constitution", "Natural and holistic healing approach", "Long-lasting health benefits", "Preventive as well as curative therapy"],
     icon: "🌿",
     tag: "Ayurvedic",
     accent: "linear-gradient(135deg, #e0ede6 0%, #f5f0e8 100%)",
   },
   {
-    title: "Shirodhara",
+    title: "Shirodhara Therapy",
     short_description: "Warm oil therapy that melts away stress and quiets the mind.",
-    full_content: "Shirodhara is one of Ayurveda's most serene and powerful therapies. A continuous, steady stream of warm medicated oil is poured over the centre of the forehead, directly calming the nervous system at its source. The experience is deeply meditative — reducing stress, dissolving anxiety, and relieving chronic insomnia. Many guests report a profound stillness of mind and improved mental clarity that stays with them long after the session.",
+    full_content: "Shirodhara is a deeply relaxing Ayurvedic therapy where a continuous stream of warm medicated oil is gently poured over the forehead (third-eye region). It is primarily used to calm the nervous system and balance mental and emotional health. Many guests report a profound stillness of mind and improved mental clarity that stays with them long after the session.",
+    benefits: ["Reduces stress, anxiety, and depression", "Improves sleep (helpful in insomnia)", "Enhances mental clarity and concentration", "Relieves headaches and migraines", "Promotes deep relaxation"],
+    conditions: ["Anxiety and stress disorders", "Insomnia", "Hypertension", "Hair and scalp issues", "Nervous system imbalances"],
+    advantages: ["Non-invasive and deeply calming therapy", "Immediate relaxation effects", "Supports emotional healing"],
     icon: "🫧",
     tag: "Signature",
     accent: "linear-gradient(135deg, #f5f0e8 0%, #e8f0e3 100%)",
+  },
+  {
+    title: "Mud Bath Therapy",
+    short_description: "Natural earth healing that detoxifies skin and revives the body.",
+    full_content: "Mud therapy involves applying medicinal mud to the body, allowing it to absorb toxins and improve skin and body health. Mud has natural healing properties that help detoxify and cool the body, making it one of the most ancient and effective natural treatments available.",
+    benefits: ["Detoxifies the skin", "Improves blood circulation", "Reduces inflammation", "Enhances skin glow and texture", "Relieves stress and fatigue"],
+    conditions: ["Skin disorders (acne, eczema)", "Joint pain and inflammation", "Heat-related conditions", "Stress and fatigue"],
+    advantages: ["Natural and chemical-free treatment", "Cooling and soothing effect", "Enhances overall skin health"],
+    icon: "🪨",
+    tag: "Natural",
+    accent: "linear-gradient(135deg, #ede8f0 0%, #e8ede3 100%)",
+  },
+  {
+    title: "Steam Bath Therapy",
+    short_description: "Herbal steam that opens pores, releases toxins, and relaxes deeply.",
+    full_content: "Steam therapy involves exposing the body to herbal steam that induces sweating and helps eliminate toxins. It opens up pores and promotes detoxification through sweat, providing a quick and effective way to cleanse the body while relaxing muscles and joints.",
+    benefits: ["Removes toxins through sweating", "Improves circulation", "Relaxes muscles and joints", "Enhances skin health", "Aids in respiratory health"],
+    conditions: ["Muscle stiffness and joint pain", "Respiratory issues", "Skin impurities", "Stress and fatigue"],
+    advantages: ["Quick detoxification", "Improves flexibility and relaxation", "Complements other Ayurvedic therapies"],
+    icon: "♨️",
+    tag: "Detox",
+    accent: "linear-gradient(135deg, #f0ede8 0%, #e8f0ec 100%)",
+  },
+  {
+    title: "Special Weight Loss Management",
+    short_description: "Customized Ayurvedic program for natural, sustainable weight loss.",
+    full_content: "This is a customized Ayurvedic program designed to help individuals lose excess weight naturally while improving metabolism and overall health. Weight gain is often caused by imbalance in digestion, metabolism, and lifestyle — this program addresses the root cause rather than just symptoms, combining therapies, diet, and lifestyle changes.",
+    benefits: ["Healthy and sustainable weight loss", "Boosts metabolism", "Improves digestion", "Reduces fat accumulation", "Enhances energy levels"],
+    conditions: ["Obesity", "Slow metabolism", "Hormonal imbalance", "Lifestyle disorders"],
+    advantages: ["Personalized diet and therapy plans", "No harmful chemicals or crash diets", "Focus on long-term health", "Combines therapies, diet, and lifestyle changes"],
+    icon: "⚖️",
+    tag: "Wellness",
+    accent: "linear-gradient(135deg, #e8f0e3 0%, #ede8f0 100%)",
   },
 ];
 
@@ -194,6 +233,34 @@ export default function TherapiesSection() {
                   }}>
                     {item.full_content}
                   </p>
+                  
+                  {item.benefits && item.benefits.length > 0 && (
+                    <div style={{ marginTop: '1.25rem' }}>
+                      <h4 style={{ fontSize: '1rem', color: '#2D4B3B', marginBottom: '0.4rem', fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}>Benefits</h4>
+                      <ul style={{ fontSize: '0.875rem', color: '#5a5f57', paddingLeft: '1.25rem', margin: 0, lineHeight: 1.6, fontWeight: 300 }}>
+                        {item.benefits.map((benefit, i) => <li key={i}>{benefit}</li>)}
+                      </ul>
+                    </div>
+                  )}
+
+                  {item.conditions && item.conditions.length > 0 && (
+                    <div style={{ marginTop: '1.25rem' }}>
+                      <h4 style={{ fontSize: '1rem', color: '#2D4B3B', marginBottom: '0.4rem', fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}>Conditions Treated</h4>
+                      <ul style={{ fontSize: '0.875rem', color: '#5a5f57', paddingLeft: '1.25rem', margin: 0, lineHeight: 1.6, fontWeight: 300 }}>
+                        {item.conditions.map((condition, i) => <li key={i}>{condition}</li>)}
+                      </ul>
+                    </div>
+                  )}
+
+                  {item.advantages && item.advantages.length > 0 && (
+                    <div style={{ marginTop: '1.25rem' }}>
+                      <h4 style={{ fontSize: '1rem', color: '#2D4B3B', marginBottom: '0.4rem', fontFamily: "'Cormorant Garamond', serif", fontWeight: 600 }}>Advantages</h4>
+                      <ul style={{ fontSize: '0.875rem', color: '#5a5f57', paddingLeft: '1.25rem', margin: 0, lineHeight: 1.6, fontWeight: 300 }}>
+                        {item.advantages.map((advantage, i) => <li key={i}>{advantage}</li>)}
+                      </ul>
+                    </div>
+                  )}
+
                   <a
                     href="#contact"
                     onClick={(e) => e.stopPropagation()}
@@ -232,10 +299,10 @@ export default function TherapiesSection() {
         .therapy-body {
           max-height: 0;
           overflow: hidden;
-          transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .therapy-body--open {
-          max-height: 400px;
+          max-height: 1000px;
         }
         .therapy-card:focus-visible {
           outline: 2px solid rgba(45,75,59,0.4);
