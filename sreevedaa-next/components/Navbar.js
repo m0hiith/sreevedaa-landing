@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import LanguageToggle from './LanguageToggle';
 
 const NAV_ITEMS = [
   ['#home', 'Home'],
@@ -100,6 +101,8 @@ export default function Navbar() {
         </ul>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          {/* Language Toggle */}
+          <LanguageToggle />
           {/* Book Now CTA — hidden on mobile */}
           <a
             href="tel:9640553411"
@@ -150,6 +153,10 @@ export default function Navbar() {
               {label}
             </a>
           ))}
+          {/* Language Toggle in mobile menu */}
+          <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '0.25rem' }}>
+            <LanguageToggle />
+          </div>
           <a href="tel:9640553411" style={{
             background: '#2D4B3B', color: 'white',
             padding: '0.8rem', borderRadius: '2rem',
