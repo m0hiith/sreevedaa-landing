@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import LanguageToggle from './LanguageToggle';
+import AnnouncementBanner from './AnnouncementBanner';
+
 
 const NAV_ITEMS = [
   ['#home', 'Home'],
@@ -50,10 +52,12 @@ export default function Navbar() {
 
   return (
     <>
+      <AnnouncementBanner />
       <nav
         id="navbar"
+        className="main-navbar"
         style={{
-          position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000,
+          position: 'fixed', left: 0, right: 0, zIndex: 1000,
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
           padding: '0.5rem 3rem',
           background: 'rgba(248,245,240,0.95)',
@@ -135,8 +139,8 @@ export default function Navbar() {
 
       {/* Mobile dropdown menu */}
       {menuOpen && (
-        <div style={{
-          position: 'fixed', top: 76, left: 0, right: 0, zIndex: 999,
+        <div className="mobile-menu" style={{
+          position: 'fixed', left: 0, right: 0, zIndex: 999,
           background: 'rgba(248,245,240,0.97)',
           backdropFilter: 'blur(12px)',
           padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.25rem',
@@ -169,7 +173,11 @@ export default function Navbar() {
 
       <style>{`
         html { scroll-behavior: smooth; }
+        .main-navbar { top: 36px; }
+        .mobile-menu { top: 112px; }
         @media (max-width: 1024px) {
+          .main-navbar { top: 32px; }
+          .mobile-menu { top: 108px; }
           .nav-desktop-links { display: none !important; }
           .nav-hamburger { display: flex !important; }
           nav { padding: 0.5rem 1.5rem !important; }
