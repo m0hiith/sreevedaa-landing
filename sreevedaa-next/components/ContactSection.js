@@ -17,7 +17,7 @@ export default function ContactSection() {
                 { text: 'P Kalyani — 9640553411', href: 'tel:9640553411' },
                 { text: 'P Uma Shankar Rao — 6281949281', href: 'tel:6281949281' },
               ]},
-              { icon: '📍', label: 'Address', values: [{ text: 'Plot No 7, Sector 12, MVP Colony, Visakhapatnam, Andhra Pradesh' }] },
+              { icon: '📍', label: 'Address', values: [{ text: 'Plot No 7, Sector 12, MVP Colony, Visakhapatnam, Andhra Pradesh', href: 'https://maps.app.goo.gl/kjDTui6RoxoxHwok6' }] },
               { icon: '🕐', label: 'Clinic Hours', values: [{ text: 'Monday – Saturday: 7:00 AM – 8:00 PM' }, { text: 'Sunday by appointment', muted: true }] },
               { icon: '🏠', label: 'Home Services', values: [{ text: 'Available across Visakhapatnam' }] },
             ].map(item => (
@@ -29,7 +29,7 @@ export default function ContactSection() {
                   <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.2rem' }}>{item.label}</div>
                   {item.values.map(v => (
                     <div key={v.text} style={{ fontSize: '0.95rem', color: v.muted ? 'rgba(255,255,255,0.5)' : 'white', fontWeight: v.muted ? 400 : 500 }}>
-                      {v.href ? <a href={v.href} style={{ color: 'white', textDecoration: 'none' }}>{v.text}</a> : v.text}
+                      {v.href ? <a href={v.href} target={v.href.startsWith('tel:') ? undefined : '_blank'} rel={v.href.startsWith('tel:') ? undefined : 'noreferrer'} style={{ color: 'white', textDecoration: 'none' }}>{v.text}</a> : v.text}
                     </div>
                   ))}
                 </div>
@@ -52,7 +52,7 @@ export default function ContactSection() {
 
         <div style={{ background: 'rgba(255,255,255,0.05)', borderRadius: '1.25rem', overflow: 'hidden', minHeight: 320, border: '1px solid rgba(255,255,255,0.1)' }}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.6!2d83.3425!3d17.7384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943b6f5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sMVP%20Colony%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.1467808040843!2d83.3336535!3d17.7377218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943a2222fa37b%3A0xf320e58495edb1ff!2sSree%20Vedaa%20Sujok%20%26%20Acupunture%20Therapy%20Centre!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
             width="100%" height="100%"
             style={{ border: 'none', minHeight: 320 }}
             allowFullScreen loading="lazy"

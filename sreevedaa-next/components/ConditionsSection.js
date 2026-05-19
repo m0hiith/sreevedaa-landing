@@ -29,12 +29,12 @@ export default function ConditionsSection() {
         ))}
       </div>
       <div style={{ textAlign:'center', marginTop:'3rem', position:'relative', zIndex:1 }}>
-        <a href="tel:9640553411" style={{
+        <a href="https://admin.ayurgrid.com/doctor/websiteappointments/createAppointment?doctor_id=1111" target="_blank" rel="noopener noreferrer" style={{
           background:'linear-gradient(135deg,#2D4B3B,#3d6450)', color:'white',
           padding:'0.9rem 2rem', borderRadius:'3rem', fontSize:'0.9rem', fontWeight:500,
           textDecoration:'none', display:'inline-flex', alignItems:'center', gap:'0.5rem',
           boxShadow:'0 8px 24px rgba(45,75,59,0.25)',
-        }}>📞 Talk to Our Expert — Free</a>
+        }}>📅 Book Appointment — Free</a>
       </div>
       <style>{`
         .condition-item:hover { background:rgba(140,157,94,0.15) !important; border-color:rgba(140,157,94,0.3) !important; transform:translateY(-4px); }

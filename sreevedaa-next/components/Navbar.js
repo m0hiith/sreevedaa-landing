@@ -109,7 +109,9 @@ export default function Navbar() {
           <LanguageToggle />
           {/* Book Now CTA — hidden on mobile */}
           <a
-            href="tel:9640553411"
+            href="https://admin.ayurgrid.com/doctor/websiteappointments/createAppointment?doctor_id=1111"
+            target="_blank"
+            rel="noopener noreferrer"
             className="nav-desktop-links"
             style={{
               background: '#2D4B3B', color: 'white',
@@ -120,7 +122,7 @@ export default function Navbar() {
             onMouseOver={e => { e.currentTarget.style.background = '#3d6450'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
             onMouseOut={e => { e.currentTarget.style.background = '#2D4B3B'; e.currentTarget.style.transform = 'none'; }}
           >
-            📞 Book Now
+            📅 Book Now
           </a>
 
           {/* Hamburger — mobile only */}
@@ -161,12 +163,12 @@ export default function Navbar() {
           <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '0.25rem' }}>
             <LanguageToggle />
           </div>
-          <a href="tel:9640553411" style={{
+          <a href="https://admin.ayurgrid.com/doctor/websiteappointments/createAppointment?doctor_id=1111" target="_blank" rel="noopener noreferrer" style={{
             background: '#2D4B3B', color: 'white',
             padding: '0.8rem', borderRadius: '2rem',
             textAlign: 'center', textDecoration: 'none', fontWeight: 600,
           }}>
-            📞 Book Now
+            📅 Book Now
           </a>
         </div>
       )}

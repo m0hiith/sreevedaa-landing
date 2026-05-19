@@ -60,7 +60,7 @@ export default function HeroSection() {
         </p>
 
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <a href="tel:9640553411" style={{
+          <a href="https://admin.ayurgrid.com/doctor/websiteappointments/createAppointment?doctor_id=1111" target="_blank" rel="noopener noreferrer" style={{
             background: 'linear-gradient(135deg, #2D4B3B, #3d6450)',
             color: 'white', padding: '0.9rem 2rem', borderRadius: '3rem',
             fontSize: '0.9rem', fontWeight: 500, textDecoration: 'none',

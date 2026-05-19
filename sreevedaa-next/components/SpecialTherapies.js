@@ -100,7 +100,9 @@ export default function SpecialTherapies() {
             {/* CTA Button */}
             <div style={{ marginTop: '1.25rem' }}>
               <a
-                href="tel:9640553411"
+                href="https://admin.ayurgrid.com/doctor/websiteappointments/createAppointment?doctor_id=1111"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
                   background: 'linear-gradient(135deg,#2D4B3B,#3d6450)', color: 'white',
@@ -112,7 +114,7 @@ export default function SpecialTherapies() {
                 onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 30px rgba(45,75,59,0.3)'; }}
                 onMouseOut={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(45,75,59,0.25)'; }}
               >
-                Book Ayurvedic Session →
+                📅 Book Ayurvedic Session →
               </a>
             </div>
           </div>
@@ -148,8 +150,8 @@ export default function SpecialTherapies() {
           <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 600, color: '#2D4B3B', marginBottom: '0.4rem' }}>Special Cleansing Therapy</div>
           <div style={{ fontSize: '0.9rem', color: '#6b7068', lineHeight: 1.6, maxWidth: 600 }}>We help cleanse and eliminate chronic diseases like <strong style={{ color: '#2D4B3B' }}>Migraine, Ringworm, Psoriasis, PCOD, PCOS</strong> and many other health disorders through deep cellular cleansing protocols.</div>
         </div>
-        <a href="tel:9640553411" style={{ marginLeft: 'auto', whiteSpace: 'nowrap', background: 'linear-gradient(135deg,#2D4B3B,#3d6450)', color: 'white', padding: '0.9rem 2rem', borderRadius: '3rem', fontSize: '0.9rem', fontWeight: 500, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-          Learn More
+        <a href="https://admin.ayurgrid.com/doctor/websiteappointments/createAppointment?doctor_id=1111" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 'auto', whiteSpace: 'nowrap', background: 'linear-gradient(135deg,#2D4B3B,#3d6450)', color: 'white', padding: '0.9rem 2rem', borderRadius: '3rem', fontSize: '0.9rem', fontWeight: 500, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+          📅 Learn More
         </a>
       </div>
 

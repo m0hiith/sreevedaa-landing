@@ -2,13 +2,13 @@ export default function FloatingWidgets() {
   return (
     <>
       {/* Sticky call bar — mobile only */}
-      <a href="tel:9640553411" style={{
+      <a href="https://admin.ayurgrid.com/doctor/websiteappointments/createAppointment?doctor_id=1111" target="_blank" rel="noopener noreferrer" style={{
         display: 'none', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 999,
         background: '#2D4B3B', color: 'white',
         textAlign: 'center', padding: '1rem',
         fontSize: '0.95rem', fontWeight: 600, textDecoration: 'none',
       }} className="sticky-call">
-        📞 Call Now — Free Consultation
+        📅 Book Appointment — Free Consultation
       </a>
 
       {/* WhatsApp bubble */}
