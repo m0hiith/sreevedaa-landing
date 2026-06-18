@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import LanguageToggle from './LanguageToggle';
 import AnnouncementBanner from './AnnouncementBanner';
@@ -11,14 +12,20 @@ const NAV_ITEMS = [
   ['#kerala', 'Kerala Ayurvedic Treatments'],
   ['#testimonials', 'Testimonies'],
   ['#contact', 'Reach Us'],
+  ['/blog', 'Blog'],
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('#home');
+  const router = useRouter();
+  const isOnBlog = router.pathname.startsWith('/blog');
 
   useEffect(() => {
-    const sectionIds = NAV_ITEMS.map(([href]) => href.replace('#', ''));
+    if (isOnBlog) return;
+    const sectionIds = NAV_ITEMS
+      .filter(([href]) => href.startsWith('#'))
+      .map(([href]) => href.replace('#', ''));
     const observers = [];
 
     sectionIds.forEach((id) => {
@@ -39,13 +46,19 @@ export default function Navbar() {
     });
 
     return () => observers.forEach((o) => o.disconnect());
-  }, []);
+  }, [isOnBlog]);
 
   const handleClick = (e, href) => {
+    if (!href.startsWith('#')) {
+      setMenuOpen(false);
+      return;
+    }
     e.preventDefault();
-    const el = document.querySelector(href);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (isOnBlog) {
+      router.push(`/${href}`);
+    } else {
+      const el = document.querySelector(href);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     setMenuOpen(false);
   };
@@ -80,28 +93,46 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <ul className="nav-desktop-links" style={{ display: 'flex', gap: '2rem', listStyle: 'none', margin: 0, padding: 0 }}>
-          {NAV_ITEMS.map(([href, label]) => (
-            <li key={href}>
+          {NAV_ITEMS.map(([href, label]) => {
+            const isActive = href.startsWith('#') ? activeSection === href : router.pathname.startsWith(href);
+            const linkEl = href.startsWith('#') ? (
               <a
                 href={href}
                 onClick={(e) => handleClick(e, href)}
                 style={{
                   textDecoration: 'none',
-                  color: activeSection === href ? '#2D4B3B' : '#2c2c2c',
+                  color: isActive ? '#2D4B3B' : '#2c2c2c',
                   fontSize: '0.85rem',
-                  fontWeight: activeSection === href ? 700 : 500,
+                  fontWeight: isActive ? 700 : 500,
                   letterSpacing: '0.04em',
                   transition: 'color 0.2s, font-weight 0.2s',
-                  borderBottom: activeSection === href ? '2px solid #8C9D5E' : '2px solid transparent',
+                  borderBottom: isActive ? '2px solid #8C9D5E' : '2px solid transparent',
                   paddingBottom: '0.2rem',
                 }}
                 onMouseOver={e => (e.target.style.color = '#2D4B3B')}
-                onMouseOut={e => { if (activeSection !== href) e.target.style.color = '#2c2c2c'; }}
+                onMouseOut={e => { if (!isActive) e.target.style.color = '#2c2c2c'; }}
               >
                 {label}
               </a>
-            </li>
-          ))}
+            ) : (
+              <Link
+                href={href}
+                style={{
+                  textDecoration: 'none',
+                  color: isActive ? '#2D4B3B' : '#2c2c2c',
+                  fontSize: '0.85rem',
+                  fontWeight: isActive ? 700 : 500,
+                  letterSpacing: '0.04em',
+                  transition: 'color 0.2s, font-weight 0.2s',
+                  borderBottom: isActive ? '2px solid #8C9D5E' : '2px solid transparent',
+                  paddingBottom: '0.2rem',
+                }}
+              >
+                {label}
+              </Link>
+            );
+            return <li key={href}>{linkEl}</li>;
+          })}
         </ul>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -148,17 +179,30 @@ export default function Navbar() {
           padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.25rem',
           boxShadow: '0 8px 30px rgba(0,0,0,0.08)',
         }}>
-          {NAV_ITEMS.map(([href, label]) => (
-            <a key={href} href={href} onClick={(e) => handleClick(e, href)}
-              style={{
-                textDecoration: 'none',
-                color: activeSection === href ? '#2D4B3B' : '#2c2c2c',
-                fontSize: '0.95rem',
-                fontWeight: activeSection === href ? 700 : 500,
-              }}>
-              {label}
-            </a>
-          ))}
+          {NAV_ITEMS.map(([href, label]) => {
+            const isActive = href.startsWith('#') ? activeSection === href : router.pathname.startsWith(href);
+            return href.startsWith('#') ? (
+              <a key={href} href={href} onClick={(e) => handleClick(e, href)}
+                style={{
+                  textDecoration: 'none',
+                  color: isActive ? '#2D4B3B' : '#2c2c2c',
+                  fontSize: '0.95rem',
+                  fontWeight: isActive ? 700 : 500,
+                }}>
+                {label}
+              </a>
+            ) : (
+              <Link key={href} href={href} onClick={() => setMenuOpen(false)}
+                style={{
+                  textDecoration: 'none',
+                  color: isActive ? '#2D4B3B' : '#2c2c2c',
+                  fontSize: '0.95rem',
+                  fontWeight: isActive ? 700 : 500,
+                }}>
+                {label}
+              </Link>
+            );
+          })}
           {/* Language Toggle in mobile menu */}
           <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '0.25rem' }}>
             <LanguageToggle />

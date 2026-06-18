@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -31,8 +32,13 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Right — SEO keywords + copyright */}
+      {/* Right — Blog link + SEO keywords + copyright */}
       <div style={{ textAlign: 'right' }}>
+        <div style={{ marginBottom: '0.4rem' }}>
+          <Link href="/blog" style={{ color: '#b5c98a', textDecoration: 'none', fontWeight: 500, fontSize: '0.82rem' }}>
+            📖 Read our Blog
+          </Link>
+        </div>
         <div>Acupuncture in Visakhapatnam · Sujok Therapy Vizag · Natural Pain Treatment Vizag</div>
         <div suppressHydrationWarning style={{ marginTop: '0.3rem' }}>© {new Date().getFullYear()} Sree Vedaa. All rights reserved.</div>
       </div>
