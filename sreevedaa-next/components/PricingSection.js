@@ -144,7 +144,7 @@ export default function PricingSection() {
           <div className="pricing-panel pricing-panel--enter" key="special">
             <div className="special-packages-grid">
               {specialPackages.map((pkg) => (
-                <div key={pkg.num} className="special-card" style={{ animationDelay: `${pkg.num * 0.1}s` }}>
+                <div key={pkg.num} className="package-card" style={{ animationDelay: `${pkg.num * 0.1}s` }}>
                   <div className="special-num">{String(pkg.num).padStart(2, '0')}</div>
                   <div className="special-body">
                     <div className="special-name">{pkg.name}</div>
@@ -365,7 +365,7 @@ export default function PricingSection() {
           from { opacity: 0; transform: scale(0.95) translateY(8px); }
           to   { opacity: 1; transform: scale(1) translateY(0); }
         }
-        .special-card {
+        .package-card {
           background: white;
           border-radius: 1.25rem;
           padding: 1.5rem;
@@ -377,7 +377,7 @@ export default function PricingSection() {
           transition: all 0.3s;
           animation: cardPop 0.4s ease-out both;
         }
-        .special-card:hover {
+        .package-card:hover {
           transform: translateY(-4px);
           box-shadow: 0 12px 32px rgba(45, 75, 59, 0.12);
         }
